@@ -18,7 +18,11 @@ myList = myList.filter(function(remove) {
 
 // 3. Counting Sheep
 
-const (countSheep) = (arrayOfSheep) =>
+const countSheep = (number) =>
+[...Array(number)]
+.map((x, i) => `${i + 1} sheep...`
+.join('');
+     
 arrayOfSheep.filter(Boolean).length
 
 
